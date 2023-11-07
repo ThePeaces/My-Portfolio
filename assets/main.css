@@ -14,10 +14,11 @@
     --first-bg-color: #000000;
     --second-bg-color: #141414;
     --main-color: #ffac42;
+    --main2-color: #676767;
     --text-color1: #ffffff;
     --text-color2: #000000;
     --text-color3: #ffac42;
-    
+    --shadow-color: #9c9c9c;
 }
 
 html {
@@ -825,6 +826,48 @@ span {
 
 .footer-iconTop a:hover i {
     color: var(--main-color);
+}
+
+.social{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+}
+ 
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding: 0px;
+    line-height: 0px;
+    background-color: var(--text-color1);
+    /* border:1px solid var(--first-bg-color); */
+    box-shadow:1px 1px 3.5px var(--shadow-color);
+    text-decoration: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+ 
+.social a:hover{
+    background-color: var(--first-bg-color);
+    color: var(--main-color);
+    transition:all ease 0.5s;
+}
+ 
+.social i{
+    font-size:20px;
+    color: var(--first-bg-color);
+}
+
+.social-icons a:hover i,
+.social a:hover i{
+    color: var(--main-color);
+    transition:all ease 0.5s;
 }
 
 
