@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@font-face {
+    font-family: myfont;
+    src: url(font/Anurati-Regular.ttf);
+}
 :root {
     --first-bg-color: #000000;
     --second-bg-color: #141414;
     --main-color: #62CDFF;
-    --main2-color: #b7b7b7;
+    --main2-color: #e1e1e1;
     --text-color1: #ffffff;
     --text-color2: #000000;
     --text-color3: #ffac42;
-    --shadow-color: #9c9c9c;
+    --shadow-color: #f0f0f0;
 }
 
 *
@@ -16,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 header
 {
@@ -32,10 +34,13 @@ header
 }
 header .logo
 {
-  color: #fff;
+  color: var(--text-color1);
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 1.5rem;
   font-weight: 700;
+  font-family: myfont;
+  letter-spacing: 1rem;
 }
 .toggle
 {
@@ -72,7 +77,8 @@ header .logo
 }
 .showcase.active
 {
-  right: 300px;
+    right: 300px;
+    box-shadow: 7px 5px 10px 0 var(--first-bg-color);
 }
 
 .showcase video
@@ -104,11 +110,14 @@ header .logo
 
 .text h2
 {
+    margin-top: 4rem;
   font-size: 4rem;
   font-weight: 800;
   color: var(--text-color1);
   line-height: 1em;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5rem;
 }
 .text h3
 {
@@ -117,14 +126,17 @@ header .logo
   color: var(--text-color1);
   line-height: 1em;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5rem;
 }
 .text p
 {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   color: var(--shadow-color);
   margin: 20px 0;
-  font-weight: 400;
+  font-weight: 500;
   max-width: 700px;
+  margin-top: 2rem;
 }
 .text a
 {
@@ -137,10 +149,11 @@ header .logo
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 4rem;
   color: var(--first-bg-color);
-  letter-spacing: 2px;
   transition: 0.2s;
+  font-family: myfont;
+  letter-spacing: 4px;
 }
 .text a:hover
 {
@@ -184,10 +197,7 @@ header .logo
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('img/favicon/favicon.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(0,151,255,1) 22%, rgba(0,203,255,1) 52%, rgba(0,212,255,1) 100%);
 }
 .menu ul
 {
@@ -202,10 +212,15 @@ header .logo
   text-decoration: none;
   font-size: 24px;
   color: var(--first-bg-color);
+  font-weight: 600;
+  font-family: myfont;
+  line-height: 4rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
 }
 .menu ul li a:hover
 {
-  color: var(--main-color); 
+  color: var(--main2-color); 
 }
 
 @media (max-width: 991px)
