@@ -216,6 +216,7 @@ body{
   padding: 3rem;
   align-self: baseline;
   flex: 2;
+  border-radius: 1rem;
 }
 
 .news__side-title {
